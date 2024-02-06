@@ -1,0 +1,15 @@
+server:
+  host: golang-app
+  port: :8080
+  grpc_port: 8081
+
+redis:
+  host: redis
+  port: 6379
+
+logfile:
+  path: server.log
+
+url:
+  alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_
+  length: 63

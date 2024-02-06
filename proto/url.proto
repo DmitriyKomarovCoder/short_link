@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package shortener;
+option go_package = "./gen";
+
+service ShortLink {
+  rpc CreateLink(Request) returns (Response);
+  rpc GetLink(Request) returns (Response);
+}
+
+message Request {
+  string url = 1;
+}
+
+message Response {
+  string url = 1;
+}
+
+message ErrorResponse {
+  string error = 1;
+}
